@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://klarpath.com/index.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Services Page -->
+    <url>
+        <loc>https://klarpath.com/services.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://klarpath.com/about.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://klarpath.com/contact.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Single Page Version -->
+    <url>
+        <loc>https://klarpath.com/one-page.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Local Business Blog -->
+    <url>
+        <loc>https://klarpath.com/local-business-blog.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Terms & Conditions -->
+    <url>
+        <loc>https://klarpath.com/terms-conditions.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://klarpath.com/privacy-policy.html</loc>
+        <lastmod>2026-01-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>
