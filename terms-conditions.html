@@ -11,6 +11,87 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <style>
+      /* Navigation colors for white background banners */
+      header.nav-on-white .navbar-brand h2 {
+        color: #a4c639 !important;
+      }
+      header.nav-on-white .navbar-nav .nav-link {
+        color: #1e1e1e !important;
+      }
+      header.nav-on-white .navbar-nav .nav-link.current,
+      header.nav-on-white .navbar-nav .nav-link.active,
+      header.nav-on-white .navbar-nav .nav-link:hover {
+        color: #a4c639 !important;
+        text-decoration: underline !important;
+      }
+      header.nav-on-white .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30, 30, 30, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+      }
+      /* Cookie Banner Styles */
+      #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 2px solid #a4c639;
+        padding: 1.5rem;
+        z-index: 9999;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #cookie-banner.show {
+        transform: translateY(0);
+      }
+      @media (min-width: 768px) {
+        #cookie-banner {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        #cookie-banner .text-content {
+          text-align: left;
+          max-width: 70%;
+        }
+      }
+      #cookie-banner .btn-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      @media (min-width: 768px) {
+        #cookie-banner .btn-group {
+          margin-top: 0;
+        }
+      }
+      #cookie-banner button {
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #ddd;
+      }
+      #cookie-accept {
+        background-color: #a4c639;
+        color: white;
+        border-color: #a4c639;
+      }
+      #cookie-accept:hover {
+        background-color: #8da830;
+      }
+      #cookie-decline {
+        background-color: transparent;
+        color: #666;
+      }
+      #cookie-decline:hover {
+        background-color: #f7f7f7;
+      }
+    </style>
 </head>
 <body>
 
@@ -40,7 +121,7 @@
       </div>
     </div>
 
-    <header>
+    <header class="nav-on-white">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
@@ -82,8 +163,10 @@
 
           <h3 style="color: #222; margin-top: 30px; margin-bottom: 15px;">3. Pricing & Payment</h3>
           <ul style="color: #555; line-height: 1.8; margin-bottom: 20px; margin-left: 20px;">
-            <li><strong>Growth Starter Plan (£150/month):</strong> Template website, chatbot, calendar booking, review automation. No setup fee.</li>
-            <li><strong>Custom Scale Plan (£300/month + £4,000-£6,000 setup):</strong> Custom website, all AI services, dedicated account manager.</li>
+            <li><strong>Launchpad Plan (£150/month + £150 Setup Fee):</strong> Includes a professional template website and essential features. Code ownership is granted after 24 monthly payments. An upfront payment of <strong>£3,000</strong> grants immediate code ownership and handover documentation.</li>
+            <li><strong>Growth Starter Plan (£300/month):</strong> Our most popular package with advanced lead capture tools. Code ownership is granted after 24 monthly payments. An upfront payment of <strong>£6,000</strong> grants immediate code ownership and handover documentation.</li>
+            <li><strong>Custom Scale Plan (£650/month + £4,000-£6,000 Setup Fee):</strong> Custom website design, advanced AI-driven SEO, content strategy, and dedicated account manager. Includes access to our client growth platform with a unified dashboard and mobile app.</li>
+            <li><strong>Enterprise Plan (From £1500/month + Custom Setup Fee):</strong> A bespoke solution for industry leaders, including dedicated infrastructure, 24/7 priority support with an SLA, and advanced security audits. Includes full access to our dedicated growth platform with a custom UI, dashboard, and mobile app. Immediate code ownership is included as part of the setup fee.</li>
             <li>Monthly billing begins on the start date specified in your agreement.</li>
             <li>Setup fees are non-refundable once service implementation begins.</li>
             <li>We accept bank transfer and credit card payments.</li>
@@ -117,7 +200,13 @@
           </ul>
 
           <h3 style="color: #222; margin-top: 30px; margin-bottom: 15px;">7. Intellectual Property</h3>
-          <p style="color: #555; line-height: 1.8; margin-bottom: 20px;">The Client retains ownership of all content, data, and assets created during the engagement. KlarPath retains ownership of our methodologies, processes, and proprietary tools. The Client grants KlarPath the right to reference the engagement as a case study (with permission).</p>
+          <p style="color: #555; line-height: 1.8; margin-bottom: 10px;"><strong>7.1 Ownership Transfer Conditions:</strong> Full ownership of the compiled website source code ("the Code") is transferred to the Client upon fulfillment of one of the following conditions:</p>
+          <ul style="color: #555; line-height: 1.8; margin-bottom: 20px; margin-left: 20px;">
+            <li><strong>Subscription Plans:</strong> Completion of the full 24-month payment term for the Launchpad or Growth Starter plans.</li>
+            <li><strong>Upfront Payment:</strong> Full payment of the one-time buyout fee for the Launchpad (£3,000) or Growth Starter (£6,000) plans.</li>
+            <li><strong>Custom & Enterprise Plans:</strong> Full payment of the setup fee for the Custom Scale or Enterprise plan.</li>
+          </ul>
+          <p style="color: #555; line-height: 1.8; margin-bottom: 20px;"><strong>7.2 License Prior to Ownership Transfer:</strong> For clients on a monthly payment plan, KlarPath grants a limited, non-exclusive, non-transferable license to use the website for the duration of the payment term. This license is contingent upon timely monthly payments.</p>
 
           <h3 style="color: #222; margin-top: 30px; margin-bottom: 15px;">8. Limitations of Liability</h3>
           <p style="color: #555; line-height: 1.8; margin-bottom: 20px;">KlarPath is not liable for indirect, incidental, special, or consequential damages arising from the use of our services. Our liability is limited to the fees paid in the preceding 12 months. We are not responsible for third-party platform changes (Google algorithm updates, ad platform policy changes, etc.) that impact results.</p>
@@ -191,5 +280,18 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- START: Cookie Consent Banner -->
+    <div id="cookie-banner">
+        <div class="text-content" style="font-size: 14px; color: #666; text-align: center;">
+            <p style="margin: 0;">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. By continuing to visit this site you agree to our use of cookies. Read our <a href="privacy-policy.html" id="cookie-policy-link" style="color: #a4c639; text-decoration: underline;">Privacy Policy</a> and <a href="terms-conditions.html" id="cookie-terms-link" style="color: #a4c639; text-decoration: underline;">Terms & Conditions</a>.</p>
+        </div>
+        <div class="btn-group">
+            <button id="cookie-accept">Accept</button>
+            <button id="cookie-decline">Decline</button>
+        </div>
+    </div>
+    <!-- END: Cookie Consent Banner -->
 </body>
 </html>

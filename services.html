@@ -28,6 +28,71 @@ Finance Business TemplateMo
 https://templatemo.com/tm-545-finance-business
 
 -->
+    <style>
+      /* Cookie Banner Styles */
+      #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 2px solid #a4c639;
+        padding: 1.5rem;
+        z-index: 9999;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #cookie-banner.show {
+        transform: translateY(0);
+      }
+      @media (min-width: 768px) {
+        #cookie-banner {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        #cookie-banner .text-content {
+          text-align: left;
+          max-width: 70%;
+        }
+      }
+      #cookie-banner .btn-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      @media (min-width: 768px) {
+        #cookie-banner .btn-group {
+          margin-top: 0;
+        }
+      }
+      #cookie-banner button {
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #ddd;
+      }
+      #cookie-accept {
+        background-color: #a4c639;
+        color: white;
+        border-color: #a4c639;
+      }
+      #cookie-accept:hover {
+        background-color: #8da830;
+      }
+      #cookie-decline {
+        background-color: transparent;
+        color: #666;
+      }
+      #cookie-decline:hover {
+        background-color: #f7f7f7;
+      }
+    </style>
   </head>
 
   <body>
@@ -333,42 +398,104 @@ https://templatemo.com/tm-545-finance-business
               <span>Transparent pricing for scalable growth</span>
             </div>
           </div>
-          <div class="col-md-6">
+          <!-- Launchpad -->
+          <div class="col-lg-3 col-md-6 mb-4">
             <div class="service-item" style="background: #fff; padding: 40px; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.1); height: 100%;">
-              <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 15px;">Growth Starter</h4>
-              <p style="font-size: 14px; color: #777; margin-bottom: 20px;">Perfect for businesses establishing their digital presence.</p>
-              <div style="font-size: 36px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">£150<span style="font-size: 16px; color: #333; font-weight: 400;">/month</span></div>
-              <p style="font-size: 12px; color: #999; margin-bottom: 25px;"><strong>No Setup Fee</strong></p>
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">Launchpad</h4>
+              <p style="font-size: 13px; color: #777; margin-bottom: 20px;">The essential toolkit to get your business online and looking professional.</p>
+              <div style="font-size: 32px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">£150<span style="font-size: 14px; color: #333; font-weight: 400;">/month</span></div>
+              <p style="font-size: 12px; color: #999; margin-bottom: 15px;">+ £150 Setup Fee</p>
+              
+              <div style="margin-bottom: 20px; padding: 10px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 11px; color: #666;">
+                <strong>Code Ownership Options:</strong><br>Own the code after 24 months, or pay a <strong>£3,000 one-time fee</strong> for immediate ownership & documentation.
+              </div>
+
               <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
                 <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Professional Template Website</li>
-                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Lead Capture (Forms & Chatbot)</li>
-                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Calendar Booking System</li>
-                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Automated Review Management</li>
-                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Google Review Follow-up</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> 'Emergency Call' Lead Magnet</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Global Speed & Cyber Protection</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Flawlessly Responsive Design</li>
               </ul>
               <div style="margin-bottom: 15px; font-size: 12px; color: #666;">
                 <input type="checkbox" checked disabled> I agree to the <a href="terms-conditions.html" target="_blank" style="color: #a4c639;">Terms & Conditions</a>
               </div>
-              <a href="https://klarpath.com" target="_blank" rel="noopener noreferrer" class="filled-button" style="width: 100%; text-align: center;">Get Started</a>
+              <a href="https://klarpath.com" class="filled-button select-plan-btn" style="width: 100%; text-align: center;">Get Started</a>
             </div>
           </div>
-          <div class="col-md-6">
+
+          <!-- Growth Starter -->
+          <div class="col-lg-3 col-md-6 mb-4">
             <div class="service-item" style="background: #fff; padding: 40px; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.1); height: 100%; border-top: 5px solid #a4c639;">
-              <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 15px;">Custom Scale</h4>
-              <p style="font-size: 14px; color: #777; margin-bottom: 20px;">For ambitious brands ready to dominate their market.</p>
-              <div style="font-size: 36px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">£300<span style="font-size: 16px; color: #333; font-weight: 400;">/month</span></div>
-              <p style="font-size: 12px; color: #999; margin-bottom: 25px;">+ £4,000 - £6,000 Setup Fee</p>
+              <div style="background-color: #a4c639; color: white; text-align: center; padding: 5px; margin: -40px -40px 20px -40px; font-size: 12px; font-weight: bold;">MOST POPULAR</div>
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">Growth Starter</h4>
+              <p style="font-size: 13px; color: #777; margin-bottom: 20px;">Perfect for businesses ready to attract and convert more customers.</p>
+              <div style="font-size: 32px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">£300<span style="font-size: 14px; color: #333; font-weight: 400;">/month</span></div>
+              <p style="font-size: 12px; color: #a4c639; font-weight: bold; margin-bottom: 15px;">No Setup Fee</p>
+              
+              <div style="margin-bottom: 20px; padding: 10px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 11px; color: #666;">
+                <strong>Code Ownership Options:</strong><br>Own the code after 24 months, or pay a <strong>£6,000 one-time fee</strong> for immediate ownership & documentation.
+              </div>
+
+              <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> <strong>Everything in Growth Starter</strong></li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Advanced Lead Capture</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Integrated Calendar Booking</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Automated Review Management</li>
+              </ul>
+              <div style="margin-bottom: 15px; font-size: 12px; color: #666;">
+                <input type="checkbox" checked disabled> I agree to the <a href="terms-conditions.html" target="_blank" style="color: #a4c639;">Terms & Conditions</a>
+              </div>
+              <a href="https://klarpath.com" class="filled-button select-plan-btn" style="width: 100%; text-align: center;">Select Plan</a>
+            </div>
+          </div>
+
+          <!-- Custom Scale -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-item" style="background: #fff; padding: 40px; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.1); height: 100%;">
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">Custom Scale</h4>
+              <p style="font-size: 13px; color: #777; margin-bottom: 20px;">For ambitious brands ready to dominate their market.</p>
+              <div style="font-size: 32px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">£650<span style="font-size: 14px; color: #333; font-weight: 400;">/month</span></div>
+              <p style="font-size: 12px; color: #999; margin-bottom: 15px;">+ £4,000 - £6,000 Setup Fee</p>
+              
+              <div style="margin-bottom: 20px; padding: 10px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 11px; color: #666;">
+                <strong>Client Growth Platform:</strong><br>Includes access to our client dashboard & mobile app to manage leads, conversations, and analytics in one place.
+              </div>
+
               <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
                 <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> <strong>Everything in Growth Starter</strong></li>
                 <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Custom Website Design & Dev</li>
                 <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Advanced AI-Driven SEO</li>
                 <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Content Strategy & Creation</li>
-                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Full AI Service Suite Access</li>
               </ul>
               <div style="margin-bottom: 15px; font-size: 12px; color: #666;">
                 <input type="checkbox" checked disabled> I agree to the <a href="terms-conditions.html" target="_blank" style="color: #a4c639;">Terms & Conditions</a>
               </div>
-              <a href="contact.html?plan=custom-scale" class="filled-button" style="width: 100%; text-align: center;">Request Consultation</a>
+              <a href="https://klarpath.com" class="filled-button select-plan-btn" style="width: 100%; text-align: center;">Request Consultation</a>
+            </div>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="service-item" style="background: #fff; padding: 40px; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.1); height: 100%;">
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">Enterprise</h4>
+              <p style="font-size: 13px; color: #777; margin-bottom: 20px;">Unparalleled performance and dedicated support for industry leaders.</p>
+              <div style="font-size: 32px; font-weight: 700; color: #a4c639; margin-bottom: 5px;">From £1500<span style="font-size: 14px; color: #333; font-weight: 400;">/month</span></div>
+              <p style="font-size: 12px; color: #999; margin-bottom: 15px;">+ Custom Setup Fee</p>
+              
+              <div style="margin-bottom: 20px; padding: 10px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 11px; color: #666;">
+                <strong>Dedicated Growth Platform:</strong><br>Full access to a dedicated UI, unified dashboard, and mobile app for complete control over leads, analytics, and communications.
+              </div>
+
+              <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> <strong>Everything in Custom Scale</strong></li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Dedicated Infrastructure & SLA</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> 24/7 Priority Support</li>
+                <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #a4c639; margin-right: 10px;"></i> Advanced Security Audits</li>
+              </ul>
+              <div style="margin-bottom: 15px; font-size: 12px; color: #666;">
+                <input type="checkbox" checked disabled> I agree to the <a href="terms-conditions.html" target="_blank" style="color: #a4c639;">Terms & Conditions</a>
+              </div>
+              <a href="https://klarpath.com" class="filled-button select-plan-btn" style="width: 100%; text-align: center;">Book a Call</a>
             </div>
           </div>
         </div>
@@ -549,6 +676,18 @@ https://templatemo.com/tm-545-finance-business
           }
       }
     </script>
+
+    <!-- START: Cookie Consent Banner -->
+    <div id="cookie-banner">
+        <div class="text-content" style="font-size: 14px; color: #666; text-align: center;">
+            <p style="margin: 0;">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. By continuing to visit this site you agree to our use of cookies. Read our <a href="privacy-policy.html" id="cookie-policy-link" style="color: #a4c639; text-decoration: underline;">Privacy Policy</a> and <a href="terms-conditions.html" id="cookie-terms-link" style="color: #a4c639; text-decoration: underline;">Terms & Conditions</a>.</p>
+        </div>
+        <div class="btn-group">
+            <button id="cookie-accept">Accept</button>
+            <button id="cookie-decline">Decline</button>
+        </div>
+    </div>
+    <!-- END: Cookie Consent Banner -->
 
   </body>
 </html>

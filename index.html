@@ -62,6 +62,69 @@ https://templatemo.com/tm-545-finance-business
       header.nav-on-white .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30, 30, 30, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
       }
+      /* Cookie Banner Styles */
+      #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 2px solid #a4c639;
+        padding: 1.5rem;
+        z-index: 9999;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #cookie-banner.show {
+        transform: translateY(0);
+      }
+      @media (min-width: 768px) {
+        #cookie-banner {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        #cookie-banner .text-content {
+          text-align: left;
+          max-width: 70%;
+        }
+      }
+      #cookie-banner .btn-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      @media (min-width: 768px) {
+        #cookie-banner .btn-group {
+          margin-top: 0;
+        }
+      }
+      #cookie-banner button {
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #ddd;
+      }
+      #cookie-accept {
+        background-color: #a4c639;
+        color: white;
+        border-color: #a4c639;
+      }
+      #cookie-accept:hover {
+        background-color: #8da830;
+      }
+      #cookie-decline {
+        background-color: transparent;
+        color: #666;
+      }
+      #cookie-decline:hover {
+        background-color: #f7f7f7;
+      }
     </style>
   </head>
 
@@ -150,7 +213,7 @@ https://templatemo.com/tm-545-finance-business
         <div class="Modern-Slider">
           <!-- Item -->
           <div class="item item-1">
-            <div class="img-fill" style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="img-fill" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
                 <div class="text-content">
                   <h6>AI-Powered Growth Agency</h6>
                   <h4>More Paying Customers,<br>Faster Growth, Higher Revenue</h4>
@@ -162,7 +225,7 @@ https://templatemo.com/tm-545-finance-business
           <!-- // Item -->
           <!-- Item -->
           <div class="item item-2">
-            <div class="img-fill" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c54be3855833?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+            <div class="img-fill" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
                 <div class="text-content">
                   <h6>Save Time with Automation</h6>
                   <h4>AI-Driven Marketing<br>That Works 24/7</h4>
@@ -213,7 +276,7 @@ https://templatemo.com/tm-545-finance-business
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI SEO">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI SEO">
               <div class="down-content">
                 <h4>AI-Powered SEO</h4>
                 <p>Rank higher, capture more qualified leads, and grow revenue without increasing ad spend. Our SEO strategies generate sustainable organic growth month after month.</p>
@@ -253,7 +316,7 @@ https://templatemo.com/tm-545-finance-business
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="KlarPath Team">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="KlarPath Team">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -290,7 +353,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>HVAC Business Owner</span>
                   <p>"KlarPath revolutionized our lead generation. We went from chasing leads to having a full schedule weeks in advance. The AI automation is a game changer."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Thomas Miller">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Thomas Miller">
               </div>
               
               <div class="testimonial-item">
@@ -308,7 +371,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>Operations Manager</span>
                   <p>"Professional, responsive, and innovative. They truly act as a partner in our growth rather than just a service provider."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Michael Ross">
+                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Michael Ross">
               </div>
               
               <div class="testimonial-item">
@@ -317,7 +380,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>CEO</span>
                   <p>"We've worked with many agencies, but KlarPath's AI-driven approach is unique. The results speak for themselves."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Emily Blunt">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Emily Blunt">
               </div>
               
             </div>
@@ -431,7 +494,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- KlarPath HVAC Solutions Case Study -->
         <div class="row" style="margin-top: 60px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="HVAC Solutions" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="HVAC Solutions" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>HVAC Solutions:</strong> Scaling Service Operations</h3>
@@ -456,7 +519,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- London IT School Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="London IT School" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="London IT School" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>London IT School:</strong> Filling Classrooms Digitally</h3>
@@ -481,7 +544,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- TechStart SaaS Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="SaaS Growth" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="SaaS Growth" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>TechStart SaaS:</strong> From Startup to Scale-up</h3>
@@ -506,7 +569,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Velvet & Vine Fashion Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fashion E-commerce" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fashion E-commerce" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Velvet & Vine:</strong> Fashion E-commerce</h3>
@@ -529,7 +592,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Urban Estates Real Estate Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Real Estate" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Real Estate" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Urban Estates:</strong> Real Estate Growth</h3>
@@ -552,7 +615,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- BrightSmile Dental Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dental Clinic" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dental Clinic" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>BrightSmile:</strong> Dental Practice</h3>
@@ -575,7 +638,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Nexus Law Group Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Firm" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Firm" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Nexus Law:</strong> Legal Services</h3>
@@ -598,7 +661,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- IronCore Gym Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fitness Gym" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fitness Gym" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>IronCore Gym:</strong> Fitness & Wellness</h3>
@@ -621,7 +684,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Saffron Bistro Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Saffron Bistro:</strong> Hospitality</h3>
@@ -644,7 +707,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Apex Financial Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Financial Consultancy" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Financial Consultancy" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Apex Financial:</strong> Wealth Management</h3>
@@ -667,7 +730,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Horizon Travels Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Travel Agency" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Travel Agency" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Horizon Travels:</strong> Boutique Travel</h3>
@@ -690,7 +753,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- BuildRight Construction Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6 order-md-2">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Construction Company" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Construction Company" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6 order-md-1">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>BuildRight:</strong> Construction</h3>
@@ -713,7 +776,7 @@ https://templatemo.com/tm-545-finance-business
         <!-- Drive Motors Automotive Case Study -->
         <div class="row" style="margin-top: 80px; align-items: center;">
           <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Automotive Dealership" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Automotive Dealership" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
           </div>
           <div class="col-md-6">
             <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>Drive Motors:</strong> Automotive</h3>
@@ -730,6 +793,28 @@ https://templatemo.com/tm-545-finance-business
               <li><strong>Faster Inventory Turn</strong> for targeted models</li>
             </ul>
             <div style="margin-top: 25px;"><a href="https://auto.klarpath.com" target="_blank" class="filled-button">Visit Live Site</a></div>
+          </div>
+        </div>
+
+        <!-- North & Vale Case Study -->
+        <div class="row" style="margin-top: 80px; align-items: center;">
+          <div class="col-md-6 order-md-2">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="North & Vale Team" class="img-fluid" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%;">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3 style="color: #333; margin-bottom: 15px; font-size: 28px;"><strong>North &amp; Vale:</strong> The Quiet Comeback</h3>
+            <p style="color: #666; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+              <strong>The Challenge:</strong> Stalled growth with traffic stuck at 8,900/mo and low engagement. The brand needed to rediscover momentum and fix a flat 0.7% conversion rate without resorting to flashy tactics.
+            </p>
+            <p style="color: #666; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+              <strong>Our Solution:</strong> We implemented a data-informed content strategy answering real customer questions, rewrote the brand story to focus on outcomes, and simplified the publishing workflow for consistency.
+            </p>
+            <h5 style="color: #a4c639; margin-top: 20px; margin-bottom: 10px; font-weight: 600;">Results (12 Months)</h5>
+            <ul style="margin: 0 0 20px 20px; color: #555;">
+              <li><strong>52% Increase</strong> in monthly traffic (to 13,600)</li>
+              <li><strong>2x Open Rate</strong> on newsletters (13% to 27%)</li>
+              <li><strong>3.4x Conversion Rate</strong> increase (0.7% to 2.4%)</li>
+            </ul>
           </div>
         </div>
         
@@ -829,7 +914,7 @@ https://templatemo.com/tm-545-finance-business
             <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 40px;">
               <div class="row" style="align-items: stretch;">
                 <div class="col-md-5">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="AI Marketing Automation" style="width: 100%; height: 100%; object-fit: cover;">
+                  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="AI Marketing Automation" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="col-md-7" style="padding: 40px;">
                   <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px;">
@@ -988,6 +1073,63 @@ https://templatemo.com/tm-545-finance-business
             </div>
           </div>
 
+          <!-- Article 4: North & Vale Case Study -->
+          <div class="col-md-12 blog-article" data-keywords="content strategy brand momentum conversion rate optimization cro case study">
+            <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 40px;">
+              <div class="row" style="align-items: stretch;">
+                <div class="col-md-5">
+                  <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="North & Vale Team" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-7" style="padding: 40px;">
+                  <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px;">
+                    <div>
+                      <h3 style="margin: 0; color: #222; font-size: 28px; line-height: 1.3;">The Quiet Comeback: How a Stalled Brand Rediscovered Momentum</h3>
+                      <p style="margin: 10px 0 0 0; color: #a4c639; font-weight: 600; font-size: 13px;">JANUARY 28, 2025</p>
+                    </div>
+                  </div>
+                  
+                  <p style="color: #555; line-height: 1.8; margin-bottom: 20px; font-size: 15px;"><strong>The Challenge:</strong> North &amp; Vale came to KlarPath not in a panic, but with a problem: their growth had stalled. Website traffic was stuck, engagement was low, and their marketing felt directionless. They didn't need flashy tactics; they needed to rediscover their rhythm and fix a flat 0.7% conversion rate.</p>
+
+                  <h5 style="color: #222; margin-top: 25px; margin-bottom: 12px; font-weight: 700;">The Before: Stalled Growth Behind Calm Numbers</h5>
+                  <ul style="color: #555; line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
+                      <li><strong>Website Traffic:</strong> Stuck at ~8,900 visits/month for over half a year.</li>
+                      <li><strong>Newsletter Open Rates:</strong> Averaging 13%, well below the 21% industry benchmark.</li>
+                      <li><strong>Conversion Rate:</strong> A flat 0.7% inquiry conversion rate.</li>
+                      <li><strong>Team Morale:</strong> The team was tired, having worked hard without seeing results.</li>
+                  </ul>
+
+                  <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin-top: 25px; margin-bottom: 25px; border-radius: 4px;">
+                    <p style="margin: 0; color: #333; font-size: 14px;"><strong>⚠️ The Hidden Cost of "Doing Nothing Different":</strong> The real cost of stalled momentum isn't just flat traffic; it's audience fatigue, wasted ad spend, and declining team morale. Doing nothing different was slowly eroding their brand equity.</p>
+                  </div>
+
+                  <p style="color: #555; line-height: 1.8; margin-bottom: 20px; font-size: 15px;"><strong>Our Strategy: Calm, Data-Informed, Human.</strong>
+                  <br>
+                  Instead of quick tricks, we focused on three core pillars:
+                  <br>
+                  1. <strong>Rewrite the Story:</strong> We shifted their messaging from "We offer services" to "We give professionals what they need to work smarter." This reframed their value proposition around outcomes, not features.
+                  <br>
+                  2. <strong>Content That Answers Questions:</strong> Using search data, we built a content strategy around questions their audience was actually asking. This established authority and captured high-intent traffic.
+                  <br>
+                  3. <strong>Simplify the Workflow:</strong> We replaced their chaotic content schedule with a predictable rhythm: 2 high-quality articles and 1 newsletter per month. This reduced team stress and doubled output.
+                  </p>
+                  
+                  <h5 style="color: #222; margin-top: 25px; margin-bottom: 12px; font-weight: 700;">Key Results (12 Months):</h5>
+                  <ul style="color: #555; line-height: 1.8; margin-left: 20px; margin-bottom: 20px;">
+                    <li><strong>52% Increase</strong> in monthly traffic (to 13,600)</li>
+                    <li><strong>2x Open Rate</strong> on newsletters (13% to 27%)</li>
+                    <li><strong>3.4x Conversion Rate</strong> increase (0.7% to 2.4%)</li>
+                  </ul>
+                  <div style="background: #f0f8ff; border-left: 4px solid #a4c639; padding: 15px; margin-top: 25px; border-radius: 4px;">
+                    <p style="margin: 0; color: #333; font-size: 14px;"><strong>💡 Insight:</strong> Momentum matters more than velocity. Consistency beats cleverness. By focusing on helpful content and a predictable schedule, we built trust that compounded over time, turning a stalled brand into a growth engine.</p>
+                  </div>
+
+                  <a href="#contactus" style="display: inline-block; margin-top: 25px; padding: 12px 32px; background: #a4c639; color: white; text-decoration: none; border-radius: 5px; font-weight: 600;">Discuss Your Growth Strategy</a>
+                  <p style="color: #999; font-size: 12px; margin-top: 15px;">By <strong>KlarPath</strong> | 8 min read</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- Blog CTA Section -->
@@ -1009,7 +1151,7 @@ https://templatemo.com/tm-545-finance-business
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="KlarPath Team">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="KlarPath Office">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -1046,7 +1188,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>HVAC Business Owner</span>
                   <p>"KlarPath revolutionized our lead generation. We went from chasing leads to having a full schedule weeks in advance. The AI automation is a game changer."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Thomas Miller">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Thomas Miller">
               </div>
               
               <div class="testimonial-item">
@@ -1055,7 +1197,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>Marketing Director</span>
                   <p>"The data analytics provided by KlarPath gave us clarity we never had before. We know exactly where every dollar goes and the return it brings."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Sarah Jenkins">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Sarah Jenkins">
               </div>
               
               <div class="testimonial-item">
@@ -1064,7 +1206,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>Operations Manager</span>
                   <p>"Professional, responsive, and innovative. They truly act as a partner in our growth rather than just a service provider."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Michael Ross">
+                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Michael Ross">
               </div>
               
               <div class="testimonial-item">
@@ -1073,7 +1215,7 @@ https://templatemo.com/tm-545-finance-business
                   <span>CEO</span>
                   <p>"We've worked with many agencies, but KlarPath's AI-driven approach is unique. The results speak for themselves."</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Emily Blunt">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=60&q=80" alt="Emily Blunt">
               </div>
               
             </div>
@@ -1399,6 +1541,18 @@ https://templatemo.com/tm-545-finance-business
         });
       });
     </script>
+
+    <!-- START: Cookie Consent Banner -->
+    <div id="cookie-banner">
+        <div class="text-content" style="font-size: 14px; color: #666; text-align: center;">
+            <p style="margin: 0;">We use cookies to enhance your experience, analyze site traffic, and serve targeted advertisements. By continuing to visit this site you agree to our use of cookies. Read our <a href="privacy-policy.html" id="cookie-policy-link" style="color: #a4c639; text-decoration: underline;">Privacy Policy</a> and <a href="terms-conditions.html" id="cookie-terms-link" style="color: #a4c639; text-decoration: underline;">Terms & Conditions</a>.</p>
+        </div>
+        <div class="btn-group">
+            <button id="cookie-accept">Accept</button>
+            <button id="cookie-decline">Decline</button>
+        </div>
+    </div>
+    <!-- END: Cookie Consent Banner -->
 
   </body>
 </html>
