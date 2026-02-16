@@ -1,10 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
 Sitemap: https://klarpath.co.uk/sitemap.xml
 
 User-agent: MJ12bot
 Disallow: /
-
-Disallow: /admin/
-Disallow: /private/
-Disallow: /cgi-bin/

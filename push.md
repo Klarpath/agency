@@ -11,12 +11,8 @@ git branch -M main
 ```
 
 ## 2. Stage and Commit
-```bash
 git add .
 git commit -m "Update site with SEO fixes, domain changes, and new content"
-```
 
 ## 3. Push
-```bash
 git push -u origin main
-```
