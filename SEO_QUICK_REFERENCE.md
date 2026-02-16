@@ -112,6 +112,8 @@ Expected: All 8 pages indexed within 2-4 weeks
 - [x] Terms & Conditions
 - [x] Blog search functionality
 - [x] Mobile responsive design
+- [x] Google Analytics 4 (GA4) tracking code added
+  - **Action Required:** Replace `G-XXXXXXXXXX` with your actual Measurement ID in all HTML files.
 
 ### Still Recommended
 - [ ] Add Organization schema to homepage

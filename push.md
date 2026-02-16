@@ -12,7 +12,7 @@ git branch -M main
 
 ## 2. Stage and Commit
 git add .
-git commit -m "Update site with SEO fixes, domain changes, and new content"
-
+git commit -m "Update LinkedIn links and SEO configuration"
 ## 3. Push
 git push -u origin main
+
