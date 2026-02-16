@@ -1,49 +1,10 @@
-# robots.txt for KlarPath Website
-# Allows all search engines to crawl and index our content
-
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /services.html
-Allow: /about.html
-Allow: /contact.html
-Allow: /one-page.html
-Allow: /local-business-blog.html
-Allow: /terms-conditions.html
-Allow: /privacy-policy.html
-Allow: /assets/
-Allow: /vendor/
-Allow: /sitemap.xml
+Sitemap: https://klarpath.co.uk/sitemap.xml
 
-# Disallow admin areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /cgi-bin/
-Disallow: /*?*sort=
-Disallow: /*?*filter=
-
-# Sitemap location
-Sitemap: https://klarpath.com/sitemap.xml
-
-# Specific rules for search engines
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-# Block bad bots
 User-agent: MJ12bot
 Disallow: /
 
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/

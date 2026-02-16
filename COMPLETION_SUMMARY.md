@@ -165,8 +165,8 @@ Before going live, verify:
 
 ## Google Search Console Setup
 
-1. Add property for klarpath.com
-2. Upload sitemap: klarpath.com/sitemap.xml
+1. Add property for klarpath.co.uk
+2. Upload sitemap: klarpath.co.uk/sitemap.xml
 3. Test robots.txt
 4. Verify ownership
 5. Monitor:
