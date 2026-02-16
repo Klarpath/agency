@@ -1,8 +1,22 @@
-# 1. Stage all modified and untracked files
+# Deployment Instructions for https://github.com/Klarpath/agency
+
+Run these commands in your terminal to deploy the latest version.
+
+## 1. Configure Remote (Ensure correct target)
+```bash
+# Reset remote 'origin' to ensure it points to the correct repo
+git remote remove origin
+git remote add origin https://github.com/Klarpath/agency.git
+git branch -M main
+```
+
+## 2. Stage and Commit
+```bash
 git add .
+git commit -m "Update site with SEO fixes, domain changes, and new content"
+```
 
-# 2. Commit the changes with a descriptive message
-git commit -m "Add PWA install instructions logic and documentation"
-
-# 3. Push the changes to the remote repository
-git push
+## 3. Push
+```bash
+git push -u origin main
+```
